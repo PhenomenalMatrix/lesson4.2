@@ -99,7 +99,7 @@ public class Main {
         }
     }
 
-    public static int defenceMates(){
+    public static void defenceMates(){
              if (heroesHealth[4] > 0 && boosDamage > 0){
                  boosDamage = 50;
                  if(boosDamage == 50){
@@ -109,7 +109,7 @@ public class Main {
              } else  if (boosDamage != 0){
                  boosDamage = 50;
              }
-        return  boosDamage;
+
 
     }
 
@@ -124,7 +124,7 @@ public class Main {
 
         }
     }
-    public static int bossStun(){
+    public static void bossStun(){
         Random ra = new Random();
         int stunChance = ra.nextInt(2);
         if (heroesHealth[7] > 0){
@@ -132,7 +132,7 @@ public class Main {
                 boosDamage = 0;
                 System.out.println("Boss was stuned");
             }
-        } return boosDamage;
+        }
 
     }
 
